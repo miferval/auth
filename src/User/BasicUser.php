@@ -12,13 +12,20 @@ use Jasny\Auth\UserInterface;
  */
 final class BasicUser implements UserInterface
 {
+
     /** @var string|int */
     public $id;
 
+    /** @var string */
+    public string $username;
+
+    /** @var string */
     protected string $hashedPassword = '';
 
     /** @var string|int */
     public $role;
+
+
 
     /**
      * @inheritDoc

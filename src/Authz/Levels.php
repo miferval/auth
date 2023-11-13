@@ -126,7 +126,7 @@ class Levels implements AuthzInterface
 
         $role = i\type_check(
             $this->user->getAuthRole($this->context),
-            ['int', 'string'],
+            ['int', 'string', 'null'],
             new \UnexpectedValueException("For authz levels the role should be string|int, %s returned (uid:$uid)")
         );
 
