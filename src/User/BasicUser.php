@@ -25,6 +25,8 @@ final class BasicUser implements UserInterface
     /** @var string|int */
     public $role;
 
+    /** @var int */
+    public $level;
 
 
     /**
